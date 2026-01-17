@@ -1,0 +1,43 @@
+# Project Memory Bank - Top App Cursor
+
+## Project Overview
+This is a Next.js application for a courses/top-page platform. The project uses Next.js App Router and CSS Modules for styling.
+
+## Technology Stack
+- **Framework**: Next.js (latest stable version)
+- **Routing**: App Router (not Pages Router)
+- **Styling**: CSS Modules
+- **API Domain**: https://courses-top.ru
+
+## API Configuration
+The application uses the following API endpoints:
+- `NEXT_PUBLIC_DOMAIN=https://courses-top.ru`
+- Top Page API:
+  - Find: `/api/top-page/find`
+  - By Alias: `/api/top-page/byAlias/`
+- Product API:
+  - Find: `/api/product/find`
+- Review API:
+  - Create Demo: `/api/review/create-demo`
+
+## Design Reference
+- Figma: https://www.figma.com/design/eHIyKZXUUtMf1BQiuv6tTA/%D0%9A%D1%83%D1%80%D1%81-2---NextJS?node-id=0-1&p=f&t=DmPbziy9MMt3KsEY-0
+
+## Development Rules
+1. Always use Next.js App Router for new pages
+2. Use CSS Modules for all component styling
+3. Follow Next.js best practices and conventions
+4. Use TypeScript for type safety (if applicable)
+5. Maintain consistent code structure and naming conventions
+
+## Project Structure
+- Use App Router directory structure (`app/` directory)
+- Components should be in appropriate directories
+- Styles should be co-located with components using CSS Modules
+
+## Environment Variables
+- `NEXT_PUBLIC_DOMAIN`: API domain URL (default: https://courses-top.ru)
+
+## TypeScript
+- Используй TypeScript для типизации.
+
