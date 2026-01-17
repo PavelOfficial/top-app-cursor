@@ -22,6 +22,7 @@ The application uses the following API endpoints:
 
 ## Design Reference
 - Figma: https://www.figma.com/design/eHIyKZXUUtMf1BQiuv6tTA/%D0%9A%D1%83%D1%80%D1%81-2---NextJS?node-id=0-1&p=f&t=DmPbziy9MMt3KsEY-0
+- Используй ./resources/NextJS.fig для верстки страниц.
 
 ## Development Rules
 1. Always use Next.js App Router for new pages
@@ -39,5 +40,12 @@ The application uses the following API endpoints:
 - `NEXT_PUBLIC_DOMAIN`: API domain URL (default: https://courses-top.ru)
 
 ## TypeScript
-- Используй TypeScript для типизации.
+- Использовать TypeScript для типизации.
+
+## Верстка.
+- При версте страниц использовать grid css верстку для позиционирования и размеров блоков. 
+Не использовать flex css.
+- Создавать адаптивный вариант верстки для крупных и средних планшетов и для самых малых
+современных мобильных устройств.
+
 
