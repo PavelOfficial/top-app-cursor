@@ -1,0 +1,144 @@
+.sidebar {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  min-height: calc(100vh - 80px);
+}
+
+.logoContainer {
+  padding: 24px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.logoLink {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.logoLink:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nav {
+  overflow-y: auto;
+  padding: 16px 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  margin-bottom: 8px;
+}
+
+.menuItemHeader {
+  padding: 12px 20px;
+}
+
+.menuItemTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111827;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.subMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+}
+
+.subMenuItem {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.subMenuItem:last-child {
+  border-bottom: none;
+}
+
+.subMenuLink {
+  display: block;
+  padding: 12px 20px 12px 40px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: all 0.2s;
+  line-height: 1.5;
+}
+
+.subMenuLink:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+  padding-left: 44px;
+}
+
+.subMenuLink:active {
+  background-color: #e5e7eb;
+}
+
+.emptyMenu {
+  padding: 24px 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  .logoContainer {
+    padding: 20px 16px;
+  }
+
+  .menuItemHeader {
+    padding: 10px 16px;
+  }
+
+  .subMenuLink {
+    padding: 10px 16px 10px 32px;
+  }
+
+  .subMenuLink:hover {
+    padding-left: 36px;
+  }
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    min-height: auto;
+  }
+
+  .logoContainer {
+    padding: 16px;
+  }
+
+  .nav {
+    max-height: 300px;
+  }
+
+  .menuItemHeader {
+    padding: 10px 16px;
+  }
+
+  .subMenuLink {
+    padding: 10px 16px 10px 28px;
+  }
+}
+
